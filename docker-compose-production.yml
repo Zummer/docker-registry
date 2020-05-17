@@ -6,7 +6,7 @@ services:
         ports:
             - "80:80"
             - "443:443"
-  l      volumes:
+        volumes:
             - /etc/letsencrypt:/etc/letsencrypt:ro
             - /var/www/html:/var/www/html:ro
             - ./docker/production/nginx/conf.d:/etc/nginx/conf.d:ro
