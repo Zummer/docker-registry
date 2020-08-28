@@ -11,7 +11,7 @@ services:
             - registry
 
     registry:
-        image: registry:2
+        image: registry:2.7.0
         volumes:
             - registry:/var/lib/registry
 
