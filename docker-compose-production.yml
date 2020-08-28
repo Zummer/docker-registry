@@ -10,6 +10,7 @@ services:
             - /etc/letsencrypt:/etc/letsencrypt:ro
             - /var/www/html:/var/www/html:ro
             - ./docker/production/nginx/conf.d:/etc/nginx/conf.d:ro
+            - ./docker/production/nginx/snippets:/etc/nginx/snippets:ro
             - ./htpasswd:/etc/nginx/auth/htpasswd:ro
         depends_on:
             - registry
